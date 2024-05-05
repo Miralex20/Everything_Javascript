@@ -3,7 +3,7 @@ const h1 = document.getElementById("myh1");
 let timer = null;
 let startTime = 0;
 let elapsedTime = 0;
-let isRunning = false;
+let isRunning = null;
 
 function start() {
   if (!isRunning) {
@@ -27,6 +27,7 @@ function reset() {
   elapsedTime = 0;
   isRunning = false;
   display.textContent = "00:00:00:00";
+  h1.textContent = `The clock has been reset ⌛`;
 }
 function update() {
   const currentTime = Date.now();
