@@ -9,6 +9,7 @@ document.addEventListener("keydown", (event) => {
   mybox.style.backgroundColor = "pink";
 
   if (event.key.startsWith("Arrow")) {
+    event.preventDefault();
     switch (event.key) {
       case "ArrowUp":
         y -= moveAmount;
