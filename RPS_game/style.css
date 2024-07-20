@@ -1,0 +1,47 @@
+body{
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1{
+    font-size: 3.5rem;
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.choices{
+    margin-bottom: 30px;
+}
+
+.choices button{
+    font-size: 7.5rem;
+    min-width: 150px;
+    margin: 0 10px;
+    border-radius: 250px;
+    background-color: hsl(200, 100%, 50%);
+    text-align: center;
+    cursor: pointer;
+    transition: background-color ease 0.5s;
+
+}
+.choices button:hover{
+    background-color: hsl(200, 100%, 70%);
+
+}
+
+#playerDisplay, #computerDisplay{
+    font-size: 2.5rem;
+}
+#resultDisplay{
+    font-size: 5rem;
+    margin: 30px 0;
+}
+.win{
+    color: green;
+}
+.lose{
+    color: red;
+}

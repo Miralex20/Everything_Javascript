@@ -9,8 +9,17 @@
   </head>
   <body>
     <h1>Rock - Paper - Scissors</h1>
-    <button onclick="">Rock</button>
-    <button>Paper</button>
-    <button>Scissors</button>
+
+    <div class="choices">
+    <button onclick="playGame('rock')">R</button>
+    <button onclick="playGame('paper')">P</button>
+    <button onclick="playGame('scissor')">S</button>
+  </div>
+
+  <div id="playerDisplay">PLAYER: </div>
+  <div id="computerDisplay">COMPUTER: </div>
+  <div id="resultDisplay"></div>
+
+
   </body>
 </html>
