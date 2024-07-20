@@ -39,9 +39,12 @@ h1{
     font-size: 5rem;
     margin: 30px 0;
 }
-.win{
+.scoreDisplay{
+    font-size: 3.5rem;
+}
+.win, #playerScoreDisplay{
     color: green;
 }
-.lose{
+.lose, #computerScoreDisplay{
     color: red;
 }
